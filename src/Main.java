@@ -3,38 +3,36 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int result = 0;
-        System.out.println(" Введите в консоли выражение соответствующему типу: Х_+_Y.\n " +
-                "Числа X и Y от 0 до 10.\n " +
-                "Вместо знака _ пробел.");
+        System.out.println("""
 
+                Введите в консоль вырожение по аналоги:
+                первая цифра(от 1 до 10 включительно),пробел,арефметический оператор(+,-,*,/),пробел,вторая цифра(от 1 до 10 включительно).""");
         Scanner console = new Scanner(System.in);
         ParsingData.parsingString(console.nextLine());
 
-        try {
+        if (ParsingData.flag) {
+            int result;
             switch (ParsingData.arephmeticOperator) {
-                case "+":
+                case "+" -> {
                     result = ParsingData.valueFirsUser + ParsingData.valueSecondUser;
-                    System.out.println(result);
-                    break;
-                case "-":
+                    System.out.println("Результат = " + result);
+                }
+                case "-" -> {
                     result = ParsingData.valueFirsUser - ParsingData.valueSecondUser;
-                    System.out.println(result);
-                    break;
-                case "*":
+                    System.out.println("Результат = " + result);
+                }
+                case "*" -> {
                     result = ParsingData.valueFirsUser * ParsingData.valueSecondUser;
-                    System.out.println(result);
-                    break;
-                case "/":
+                    System.out.println("Результат = " + result);
+                }
+                case "/" -> {
                     result = ParsingData.valueFirsUser / ParsingData.valueSecondUser;
-                    System.out.println(result);
-                    break;
-                default:
-                    System.out.println("Оператор не верный");
+                    System.out.println("Результат = " + result);
+                }
+                default -> System.out.println("Арефметический оператор не верный");
             }
-        } catch (RuntimeException e) {
         }
-
 
     }
 }
+//}
