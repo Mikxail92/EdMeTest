@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("""
 
-                ¬‚Â‰ËÚÂ ‚ ÍÓÌÒÓÎ¸ ‚˚ÓÊÂÌËÂ ÔÓ ‡Ì‡ÎÓ„Ë:
-                ÔÂ‚‡ˇ ˆËÙ‡(ÓÚ 1 ‰Ó 10 ‚ÍÎ˛˜ËÚÂÎ¸ÌÓ),ÔÓ·ÂÎ,‡ÂÙÏÂÚË˜ÂÒÍËÈ ÓÔÂ‡ÚÓ(+,-,*,/),ÔÓ·ÂÎ,‚ÚÓ‡ˇ ˆËÙ‡(ÓÚ 1 ‰Ó 10 ‚ÍÎ˛˜ËÚÂÎ¸ÌÓ).""");
+                –í–≤–µ–¥–∏—Ç–µ –≤ –∫–æ–Ω—Å–æ–ª—å –≤—ã—Ä–æ–∂–µ–Ω–∏–µ –ø–æ –∞–Ω–∞–ª–æ–≥–∏:
+                –ø–µ—Ä–≤–∞—è —Ü–∏—Ñ—Ä–∞(–æ—Ç 1 –¥–æ 10 –≤–∫–ª—é—á–∏—Ç–µ–ª—å–Ω–æ),–ø—Ä–æ–±–µ–ª,–∞—Ä–µ—Ñ–º–µ—Ç–∏—á–µ—Å–∫–∏–π –æ–ø–µ—Ä–∞—Ç–æ—Ä(+,-,*,/),–ø—Ä–æ–±–µ–ª,–≤—Ç–æ—Ä–∞—è —Ü–∏—Ñ—Ä–∞(–æ—Ç 1 –¥–æ 10 –≤–∫–ª—é—á–∏—Ç–µ–ª—å–Ω–æ).""");
         Scanner console = new Scanner(System.in);
         ParsingData.parsingString(console.nextLine());
 
@@ -15,21 +15,21 @@ public class Main {
             switch (ParsingData.arephmeticOperator) {
                 case "+" -> {
                     result = ParsingData.valueFirsUser + ParsingData.valueSecondUser;
-                    System.out.println("–ÂÁÛÎ¸Ú‡Ú = " + result);
+                    System.out.println("–†–µ–∑—É–ª—å—Ç–∞—Ç = " + result);
                 }
                 case "-" -> {
                     result = ParsingData.valueFirsUser - ParsingData.valueSecondUser;
-                    System.out.println("–ÂÁÛÎ¸Ú‡Ú = " + result);
+                    System.out.println("–†–µ–∑—É–ª—å—Ç–∞—Ç = " + result);
                 }
                 case "*" -> {
                     result = ParsingData.valueFirsUser * ParsingData.valueSecondUser;
-                    System.out.println("–ÂÁÛÎ¸Ú‡Ú = " + result);
+                    System.out.println("–†–µ–∑—É–ª—å—Ç–∞—Ç = " + result);
                 }
                 case "/" -> {
                     result = ParsingData.valueFirsUser / ParsingData.valueSecondUser;
-                    System.out.println("–ÂÁÛÎ¸Ú‡Ú = " + result);
+                    System.out.println("–†–µ–∑—É–ª—å—Ç–∞—Ç = " + result);
                 }
-                default -> System.out.println("¿ÂÙÏÂÚË˜ÂÒÍËÈ ÓÔÂ‡ÚÓ ÌÂ ‚ÂÌ˚È");
+                default -> System.out.println("–ê—Ä–µ—Ñ–º–µ—Ç–∏—á–µ—Å–∫–∏–π –æ–ø–µ—Ä–∞—Ç–æ—Ä –Ω–µ –≤–µ—Ä–Ω—ã–π");
             }
         }
 

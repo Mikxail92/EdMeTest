@@ -6,7 +6,7 @@ class ValidateValueInt {
         if (i <= 10 & i > 0) {
             return i;
         } else {
-            System.out.println("Введёные числа не входят в диапозон от 1 до 10 включительно");
+            System.out.println("Р’РІРµРґС‘РЅС‹Рµ С‡РёСЃР»Р° РЅРµ РІС…РѕРґСЏС‚ РІ РґРёР°РїРѕР·РѕРЅ РѕС‚ 1 РґРѕ 10 РІРєР»СЋС‡РёС‚РµР»СЊРЅРѕ");
             throw new RuntimeException();
         }
     }
