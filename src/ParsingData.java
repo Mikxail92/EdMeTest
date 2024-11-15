@@ -21,9 +21,9 @@ class ParsingData {
             flag = true;
 
         } catch (NumberFormatException e) {
-            System.out.println("Ошибка: Введены не корректные числа. \n" + e);
+            System.out.println("РћС€РёР±РєР°: Р’РІРµРґРµРЅС‹ РЅРµ РєРѕСЂСЂРµРєС‚РЅС‹Рµ С‡РёСЃР»Р°. \n" + e);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Ошибка индекса массива");
+            System.out.println("РћС€РёР±РєР° РёРЅРґРµРєСЃР° РјР°СЃСЃРёРІР°");
         } catch (RuntimeException e) {
             System.out.println(e);
         }
